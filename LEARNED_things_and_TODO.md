@@ -6,6 +6,7 @@
   - [Learned things](#learned-things)
     - [How to import files and functions](#how-to-import-files-and-functions)
     - [Bootstrap for CSS styling in Python:](#bootstrap-for-css-styling-in-python)
+    - [Creating database tables](#creating-database-tables)
 
 ## TO DO list
 
@@ -70,5 +71,17 @@ From this python tutorial about django: https://realpython.com/get-started-with-
 ### Bootstrap for CSS styling in Python:
  We can use **Boostrap** to style our front-end, without having to do all the details of CSS! Isn't this cool? https://getbootstrap.com/docs/4.1/getting-started/introduction/#quick-start
 
+### Creating database tables
+
+1. A database table is a django *model*. Each model is a class (in python) where each property will be a column in the database table, and where each instance will be a new row of the table. By default Django uses *SQLite*.
+
+2. In order to create a table, we create a **migration** using the command:
+   `python3 manage.py makemigrations projects`
+   where *projects* is the directory that contains the *models.py* file. Inside the *models.py* the classes (or database tables) are declared.
+
+3. First we create a model class (or table), then a migration.
+
+4. Finally we *apply the migrations* or database table creations, by runnin the command:
+   `python3 manage.py migrate projects`
 
 
