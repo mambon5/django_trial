@@ -9,13 +9,14 @@
       - [Bootstrap for CSS styling in Python:](#bootstrap-for-css-styling-in-python)
       - [Creating database tables](#creating-database-tables)
       - [The views send data to html files](#the-views-send-data-to-html-files)
+      - [Django admin for adding data to the tables](#django-admin-for-adding-data-to-the-tables)
     - [Set up git repo locally](#set-up-git-repo-locally)
 
 ## TO DO list
 
 ## I was last doing:
 
-    1. > Django tutorial, Project App: Views  https://realpython.com/get-started-with-django-1/#projects-app-views
+    1. > Django tutorial, Blog App: Views  https://realpython.com/get-started-with-django-1/#blog-app-views
    
 ## Learned things 
 
@@ -91,7 +92,7 @@ From this python tutorial about django: https://realpython.com/get-started-with-
 
  As the tutorial says: *view functions to send the data from the database to the HTML templates*
 
-
+#### Django admin for adding data to the tables
 
 ### Set up git repo locally
 
