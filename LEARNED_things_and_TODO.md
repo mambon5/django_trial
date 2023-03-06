@@ -4,13 +4,14 @@
   - [TO DO list](#to-do-list)
   - [I was last doing:](#i-was-last-doing)
   - [Learned things](#learned-things)
-    - [Python Django tutorial](#python-django-tutorial)
-      - [How to import files and functions](#how-to-import-files-and-functions)
-      - [Bootstrap for CSS styling in Python:](#bootstrap-for-css-styling-in-python)
-      - [Creating database tables](#creating-database-tables)
-      - [The views send data to html files](#the-views-send-data-to-html-files)
-      - [Django admin for adding data to the tables](#django-admin-for-adding-data-to-the-tables)
-    - [Set up git repo locally](#set-up-git-repo-locally)
+  - [Python Django tutorial](#python-django-tutorial)
+    - [How to import files and functions](#how-to-import-files-and-functions)
+    - [Activate python virtual environment \& server](#activate-python-virtual-environment--server)
+    - [Bootstrap for CSS styling in Python:](#bootstrap-for-css-styling-in-python)
+    - [Creating database tables](#creating-database-tables)
+    - [The views send data to html files](#the-views-send-data-to-html-files)
+    - [Django admin for adding data to the tables](#django-admin-for-adding-data-to-the-tables)
+  - [Set up git repo locally](#set-up-git-repo-locally)
 
 ## TO DO list
 
@@ -20,10 +21,10 @@
    
 ## Learned things 
 
-### Python Django tutorial 
+## Python Django tutorial 
 From this python tutorial about django: https://realpython.com/get-started-with-django-1/
 
-#### How to import files and functions 
+### How to import files and functions 
     Depends on the entry-point script.
 
     In a file system like this:
@@ -72,10 +73,20 @@ From this python tutorial about django: https://realpython.com/get-started-with-
     │   └── wsgi.py
     ```
 
-#### Bootstrap for CSS styling in Python:
+### Activate python virtual environment & server
+
+Just run
+
+`source venv/bin/activate`
+
+for activating the previously created python virtual environment. In order to run the python server, just run:
+
+`python manage.py runserver`
+
+### Bootstrap for CSS styling in Python:
  We can use **Boostrap** to style our front-end, without having to do all the details of CSS! Isn't this cool? https://getbootstrap.com/docs/4.1/getting-started/introduction/#quick-start
 
-#### Creating database tables
+### Creating database tables
 
 1. A database table is a django *model*. Each model is a class (in python) where each property will be a column in the database table, and where each instance will be a new row of the table. By default Django uses *SQLite*.
 
@@ -88,13 +99,13 @@ From this python tutorial about django: https://realpython.com/get-started-with-
 4. Finally we *apply the migrations* or database table creations, by runnin the command:
    `python3 manage.py migrate projects`
 
-#### The views send data to html files
+### The views send data to html files
 
  As the tutorial says: *view functions to send the data from the database to the HTML templates*
 
-#### Django admin for adding data to the tables
+### Django admin for adding data to the tables
 
-### Set up git repo locally
+## Set up git repo locally
 
 In order to start ur dir run
 
